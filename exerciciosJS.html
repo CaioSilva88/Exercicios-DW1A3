@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta chaeset="UTF-8"/>
+    <script>
+       
+
+        function calcula(){
+            var num1= document.querySelector(".num1").value;
+            var num2= document.querySelector(".num2").value;
+
+            var resultado = parseInt(num1) + parseInt(num2);
+            document.querySelector(".resultado").innerHTML = resultado;
+            
+        }
+
+        function fatorial(){
+            var x = document.querySelector(".x").value;
+            var y = parseInt(x);
+            var resultadoFatorial = y;
+            for(var i = 1;i<y;i++){
+                resultadoFatorial = resultadoFatorial*i;
+            }
+            document.querySelector(".resultadoFatorial").innerHTML = resultadoFatorial;
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <section>
+    <div class="soma">
+    <h1>Exercicio calcular a soma de dois numeros e fatorial de um numero inteiro em JS</h1>
+
+        Primeiro valor a ser somado:
+        <input class="num1" type="text"><br/>
+        Segundo valor a ser somado:
+        <input class="num2" type="number"><br/>
+        <button onclick="calcula()">resultado</button>
+        <p class="resultado"></p><br/>
+        
+    </div>
+    <div class="fatorial">
+        <br/>
+        Valor a ser calculado a fatorial:
+        <input class="x" type="number">
+        <button onclick="fatorial()">resultadoFatorial</button>
+        <p class="resultadoFatorial"></p>
+
+
+    </div>
+
+    </section>
+    
+
+</body>
+
+
+</html>
