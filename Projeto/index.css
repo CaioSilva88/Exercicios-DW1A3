@@ -1,0 +1,138 @@
+/*------------------------------------------------*/
+/*------------ by: Caio Silva SP3026795 ----------*/
+/*------------------------------------------------*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+.sidebar{
+    position:fixed;
+    left:0;
+    width:250;
+    height: 100%;
+    background: #042331;
+}
+.sidebar header{
+    font-size:22px;
+    color:white;
+    text-align: center;
+    line-height: 70px;
+    background:#042331;
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .2s;
+
+
+}
+.sidebar ul li:hover a{
+    padding-left:50px;
+    color: rgba(145, 145, 145);
+    text-shadow: 3px 3px black;
+
+}
+.sidebar{
+    border-right:50px;
+}
+
+img.espaco{
+    height: 15%;
+    width:fit-content;
+    padding-left: 420px;
+    padding-top:5px;
+    position:absolute;
+    
+}
+
+.foto a{
+    text-decoration: none;
+    color: rgba(214, 205, 208);
+}
+.titulo{
+    position: absolute;
+    padding-top: 40px;
+    padding-left:500px;
+    font-size:35px;
+    font-family: Arial;
+}
+.titulo:hover{
+    font-size: 40px;
+    transition:.5s;
+}
+
+
+.container{
+    width:960px;
+    /* aqui os dois*/
+    height:1000px;
+    background:white;
+    float:right;
+    margin-top:150px;
+    margin-left:100px;
+    display:inline;
+    
+}
+.container .box{
+    margin-left:80px;
+    margin-bottom:10px;
+    position: relative;
+    width:700px;
+    height:200px;
+    background:white;
+    box-sizing: border-box;
+}
+.container .box .imgBox{
+    position: relative;
+    /* aumentar sem ver aquela borda chata*/
+    overflow: hidden;
+}
+.container .box .imgBox img{
+    max-width:100%;
+    max-height:100%;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+   transform:scale(1.2);
+}
+.container .box .details{
+    position:absolute;
+    top: 10px;
+    
+    left:10px;
+    bottom:10px;
+    right:10px;
+    background: rgba(0,0,0, .8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .details{
+
+transform: scaleY(1);
+
+}
+
+.container .box .details .content{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:center;
+    padding:15px;
+    color:#fff;
+
+}
+
